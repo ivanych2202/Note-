@@ -11,6 +11,15 @@
 		2CC33EDB2B83802200D9741C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC33EDA2B83802200D9741C /* ContentView.swift */; };
 		2CC33EDD2B83802500D9741C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC33EDC2B83802500D9741C /* Assets.xcassets */; };
 		2CC33EE02B83802500D9741C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC33EDF2B83802500D9741C /* Preview Assets.xcassets */; };
+		2CC33EEB2B84D89300D9741C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC33EEA2B84D89300D9741C /* Note.swift */; };
+		2CC33EEE2B864ABA00D9741C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2CC33EED2B864ABA00D9741C /* Realm */; };
+		2CC33EF02B864ABA00D9741C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2CC33EEF2B864ABA00D9741C /* RealmSwift */; };
+		2CC33EF52B864DF200D9741C /* NoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC33EF42B864DF200D9741C /* NoteListView.swift */; };
+		2CC33EF72B86561300D9741C /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC33EF62B86561300D9741C /* NoteView.swift */; };
+		2CC33EF92B87E47600D9741C /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC33EF82B87E47600D9741C /* AddNoteView.swift */; };
+		2CC33EFB2B8B784F00D9741C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC33EFA2B8B784F00D9741C /* DataManager.swift */; };
+		2CC33EFF2B8C9D4100D9741C /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC33EFE2B8C9D4100D9741C /* NoteViewModel.swift */; };
+		2CC33F012B8CA29C00D9741C /* EditNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC33F002B8CA29C00D9741C /* EditNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,13 @@
 		2CC33EDA2B83802200D9741C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2CC33EDC2B83802500D9741C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CC33EDF2B83802500D9741C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CC33EEA2B84D89300D9741C /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		2CC33EF42B864DF200D9741C /* NoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListView.swift; sourceTree = "<group>"; };
+		2CC33EF62B86561300D9741C /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		2CC33EF82B87E47600D9741C /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
+		2CC33EFA2B8B784F00D9741C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		2CC33EFE2B8C9D4100D9741C /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
+		2CC33F002B8CA29C00D9741C /* EditNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC33EF02B864ABA00D9741C /* RealmSwift in Frameworks */,
+				2CC33EEE2B864ABA00D9741C /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				2CC33ED82B83802200D9741C /* Note_App.swift */,
-				2CC33EDA2B83802200D9741C /* ContentView.swift */,
+				2CC33EF12B864D6800D9741C /* Model */,
+				2CC33EF22B864D7900D9741C /* View */,
+				2CC33EF32B864D8E00D9741C /* ViewModel */,
 				2CC33EDC2B83802500D9741C /* Assets.xcassets */,
 				2CC33EDE2B83802500D9741C /* Preview Content */,
 			);
@@ -65,6 +85,35 @@
 				2CC33EDF2B83802500D9741C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2CC33EF12B864D6800D9741C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2CC33EEA2B84D89300D9741C /* Note.swift */,
+				2CC33EFA2B8B784F00D9741C /* DataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CC33EF22B864D7900D9741C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CC33EF42B864DF200D9741C /* NoteListView.swift */,
+				2CC33EF62B86561300D9741C /* NoteView.swift */,
+				2CC33EF82B87E47600D9741C /* AddNoteView.swift */,
+				2CC33F002B8CA29C00D9741C /* EditNoteView.swift */,
+				2CC33EDA2B83802200D9741C /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CC33EF32B864D8E00D9741C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2CC33EFE2B8C9D4100D9741C /* NoteViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +132,10 @@
 			dependencies = (
 			);
 			name = "Note+";
+			packageProductDependencies = (
+				2CC33EED2B864ABA00D9741C /* Realm */,
+				2CC33EEF2B864ABA00D9741C /* RealmSwift */,
+			);
 			productName = "Note+";
 			productReference = 2CC33ED52B83802200D9741C /* Note+.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +164,9 @@
 				Base,
 			);
 			mainGroup = 2CC33ECC2B83802200D9741C;
+			packageReferences = (
+				2CC33EEC2B864ABA00D9741C /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 2CC33ED62B83802200D9741C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +193,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC33EFF2B8C9D4100D9741C /* NoteViewModel.swift in Sources */,
+				2CC33F012B8CA29C00D9741C /* EditNoteView.swift in Sources */,
+				2CC33EF92B87E47600D9741C /* AddNoteView.swift in Sources */,
 				2CC33EDB2B83802200D9741C /* ContentView.swift in Sources */,
+				2CC33EF72B86561300D9741C /* NoteView.swift in Sources */,
+				2CC33EFB2B8B784F00D9741C /* DataManager.swift in Sources */,
 				2CC33ED92B83802200D9741C /* Note_App.swift in Sources */,
+				2CC33EF52B864DF200D9741C /* NoteListView.swift in Sources */,
+				2CC33EEB2B84D89300D9741C /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +341,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +350,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ivan-elonov.Note-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,8 +373,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +382,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ivan-elonov.Note-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -344,6 +413,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2CC33EEC2B864ABA00D9741C /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2CC33EED2B864ABA00D9741C /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CC33EEC2B864ABA00D9741C /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		2CC33EEF2B864ABA00D9741C /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CC33EEC2B864ABA00D9741C /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2CC33ECD2B83802200D9741C /* Project object */;
 }
